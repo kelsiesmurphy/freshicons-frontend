@@ -20,14 +20,12 @@ export default function RootLayout({
       </head>
       <body className="font-publica antialiased px-4 selection:bg-primary selection:text-white min-h-screen bg-[url('/background-grid.svg')] bg-top bg-no-repeat bg-fixed">
         <SkipToContent />
-        <main className="">
-          <LenisWrapper>
-            <Providers>
-              <div id="main-content" className="">{children}</div>
-            </Providers>
-            <Toaster />
-          </LenisWrapper>
-        </main>
+        <LenisWrapper>
+          <Providers>
+            <main id="main-content">{children}</main>
+          </Providers>
+          <Toaster />
+        </LenisWrapper>
         {process.env.NODE_ENV === "development" && <DevTools />}
       </body>
     </html>

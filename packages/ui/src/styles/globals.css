@@ -3,6 +3,9 @@
 @source "../../../components/**/*.{ts,tsx}";
 @source "../**/*.{ts,tsx}";
 
+/* Custom CSS imports */
+@import "./background-gradient.css";
+
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -123,5 +126,15 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+}
+
+@layer utilities {
+  .font-publica {
+    font-family: "Publica Sans Round", sans-serif;
   }
 }
