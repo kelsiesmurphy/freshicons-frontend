@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-Thin.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-Thin.woff")
+      format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-Thlt.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-Thlt.woff")
+      format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-XLt.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-XLt.woff")
+      format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-XLtlt.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-XLtlt.woff")
+      format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-UILt.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-UILt.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-UILtlt.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-UILtlt.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-Lt.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-Lt.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-Ltlt.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-Ltlt.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-Rg.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-Rg.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-Rglt.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-Rglt.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-Md.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-Md.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-Mdlt.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-Mdlt.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-Bd.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-Bd.woff")
+      format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-Bdlt.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-Bdlt.woff")
+      format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-XBd.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-XBd.woff")
+      format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Publica Sans Round";
+  src:
+    url("/fonts/publica-sans-round/woff2/PublicaSansRound-XBdlt.woff2")
+      format("woff2"),
+    url("/fonts/publica-sans-round/woff/PublicaSansRound-XBdlt.woff")
+      format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}

@@ -1,30 +1,35 @@
-import { Geist, Geist_Mono } from "next/font/google"
+import "@workspace/ui/globals.css";
+import "@/styles/fonts.css";
+import { Providers } from "@/components/providers";
 
-import "@workspace/ui/globals.css"
-import { Providers } from "@/components/providers"
-
-const fontSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-sans",
-})
-
-const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-})
+import { Toaster } from "@workspace/ui/components/sonner";
+import Plausible from "@workspace/ui/lib/plausible";
+import LenisWrapper from "@/components/lenis-wrapper";
+import SkipToContent from "@workspace/ui/components/utility/skip-to-content";
+import DevTools from "@workspace/ui/components/utility/dev-tools";
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased `}
-      >
-        <Providers>{children}</Providers>
+      <head>
+        <Plausible />
+      </head>
+      <body className="font-publica antialiased px-4 selection:bg-primary selection:text-white min-h-screen bg-[url('/background-grid.svg')] bg-top bg-no-repeat bg-fixed">
+        <SkipToContent />
+        <main className="">
+          <LenisWrapper>
+            <Providers>
+              <div id="main-content" className="">{children}</div>
+            </Providers>
+            <Toaster />
+          </LenisWrapper>
+        </main>
+        {process.env.NODE_ENV === "development" && <DevTools />}
       </body>
     </html>
-  )
+  );
 }
