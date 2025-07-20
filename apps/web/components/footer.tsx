@@ -7,7 +7,7 @@ import { brand } from "@workspace/ui/lib/constants/brand";
 
 export default function Footer() {
   return (
-    <section className="container max-w-5xl">
+    <section className="container px-4">
       <div className="py-8 text-sm text-muted-foreground flex justify-between items-center">
         <div className="flex gap-2 items-center">
           <p>

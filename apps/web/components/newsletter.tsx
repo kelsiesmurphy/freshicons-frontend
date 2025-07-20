@@ -59,12 +59,12 @@ export function Newsletter() {
   }
 
   return (
-    <section className="flex bg-secondary/40 flex-col items-center py-16 md:py-24 gap-6">
+    <section className="flex bg-secondary/40 flex-col items-center py-16 md:py-24 px-4 gap-6">
       <div className="flex container flex-col items-center text-center gap-5 max-w-3xl">
-        <h2 className="font-nord text-3xl md:text-4xl font-medium transition-all">
+        <h2 className="font-nord text-2xl md:text-4xl font-medium transition-all">
           Want to stay notified?
         </h2>
-        <p className="text-muted-foreground text-lg md:text-xl transition-all">
+        <p className="text-muted-foreground sm:text-lg md:text-xl transition-all">
           Be the first to know about the latest releases and updates as they become
           available, as well as any other information we need to share with you.
         </p>

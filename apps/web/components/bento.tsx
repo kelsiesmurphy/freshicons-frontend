@@ -17,7 +17,7 @@ import { motion } from "motion/react";
 
 export function Bento() {
   return (
-    <BentoGrid className="-mt-20 pb-12 z-10 max-w-5xl mx-auto px-8 md:auto-rows-[20rem]">
+    <BentoGrid className="-mt-8 sm:-mt-20 pb-12 z-10 max-w-5xl mx-auto px-8 md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
