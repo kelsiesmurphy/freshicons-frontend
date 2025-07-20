@@ -1,7 +1,11 @@
 "use client";
+
 import { cn } from "@workspace/ui/lib/utils";
-import React from "react";
-import { BentoGrid, BentoGridItem } from "@workspace/ui/components/aceternity-ui/bento-grid";
+import React, { useEffect, useState } from "react";
+import {
+  BentoGrid,
+  BentoGridItem,
+} from "@workspace/ui/components/aceternity-ui/bento-grid";
 import {
   IconBoxAlignRightFilled,
   IconClipboardCopy,
@@ -11,10 +15,9 @@ import {
 } from "@tabler/icons-react";
 import { motion } from "motion/react";
 
-
 export function Bento() {
   return (
-    <BentoGrid className="-mt-20 z-10 max-w-5xl mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="-mt-20 pb-12 z-10 max-w-5xl mx-auto px-8 md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -86,24 +89,27 @@ const SkeletonOne = () => {
   );
 };
 const SkeletonTwo = () => {
+  const [widths, setWidths] = useState<number[]>([]);
+
+  useEffect(() => {
+    const randomWidths = new Array(6)
+      .fill(0)
+      .map(() => Math.random() * (100 - 40) + 40);
+    setWidths(randomWidths);
+  }, []);
+
   const variants = {
-    initial: {
-      width: 0,
-    },
+    initial: { width: 0 },
     animate: {
       width: "100%",
-      transition: {
-        duration: 0.2,
-      },
+      transition: { duration: 0.2 },
     },
     hover: {
       width: ["0%", "100%"],
-      transition: {
-        duration: 2,
-      },
+      transition: { duration: 2 },
     },
   };
-  const arr = new Array(6).fill(0);
+
   return (
     <motion.div
       initial="initial"
@@ -111,15 +117,13 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      {arr.map((_, i) => (
+      {widths.map((width: number, i: number) => (
         <motion.div
-          key={"skelenton-two" + i}
+          key={`skeleton-two-${i}`}
           variants={variants}
-          style={{
-            maxWidth: Math.random() * (100 - 40) + 40 + "%",
-          }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
-        ></motion.div>
+          style={{ maxWidth: `${width}%` }}
+          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
+        />
       ))}
     </motion.div>
   );

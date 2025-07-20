@@ -13,7 +13,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@workspace/ui/components/navigation-menu";
-import WordMark from "@workspace/ui/components/branding/wordmark";
+import WordMark3 from "@workspace/ui/components/branding/wordmark3";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -55,9 +55,9 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navigation() {
   return (
-    <header className="gap-4 z-50 flex container justify-between items-center py-6">
+    <header className="gap-4 z-50 px-4 flex container justify-between items-center py-6">
       <Link href="/" className="outline-brand">
-        <WordMark height={64} />
+        <WordMark3 height={30} />
       </Link>
       <nav className="hidden md:flex gap-2">
         <NavigationMenu viewport={false}>

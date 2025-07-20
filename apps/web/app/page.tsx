@@ -1,6 +1,8 @@
 import { Bento } from "@/components/bento";
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import { Navigation } from "@/components/navigation";
+import { Newsletter } from "@/components/newsletter";
 
 export default function Page() {
   return (
@@ -8,6 +10,8 @@ export default function Page() {
       <Navigation />
       <Hero />
       <Bento />
+      <Newsletter />
+      <Footer />
     </div>
   );
 }
