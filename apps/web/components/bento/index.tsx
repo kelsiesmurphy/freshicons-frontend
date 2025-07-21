@@ -11,7 +11,7 @@ import React from "react";
 export function Bento() {
   return (
     <section className="-mt-8 sm:-mt-20 relative z-10 pb-12 px-8">
-      <BentoGrid className="max-w-5xl mx-auto md:auto-rows-[20rem]">
+      <BentoGrid className="max-w-[976px] mx-auto md:auto-rows-[20rem]">
         {bentoItems.map((item, i) => (
           <BentoGridItem
             key={i}
