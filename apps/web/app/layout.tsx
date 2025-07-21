@@ -22,7 +22,7 @@ export default function RootLayout({
         <SkipToContent />
         <LenisWrapper>
           <Providers>
-            <main id="main-content">{children}</main>
+            {children}
           </Providers>
           <Toaster />
         </LenisWrapper>

@@ -2,7 +2,7 @@ import { Button } from "@workspace/ui/components/button";
 
 export default function SkipToContent() {
   return (
-    <div className="absolute top-6 left-4">
+    <div className="absolute z-50 top-6 left-4">
       <Button asChild>
         <a
           href="#main-content"

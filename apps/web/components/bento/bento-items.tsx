@@ -1,71 +1,73 @@
+import { ReactNode } from "react";
 import SkeletonOne from "./skeletons/skeleton-one";
 import SkeletonTwo from "./skeletons/skeleton-two";
 import SkeletonThree from "./skeletons/skeleton-three";
 import SkeletonFour from "./skeletons/skeleton-four";
 import SkeletonFive from "./skeletons/skeleton-five";
+import { Album, Anvil, Cpu, Leaf, Sparkles } from "lucide-react";
 
-import {
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-  IconBoxAlignRightFilled,
-} from "@tabler/icons-react";
+type BentoItem = {
+  title: string;
+  description: ReactNode;
+  header: ReactNode;
+  className?: string;
+  icon?: ReactNode;
+};
 
-export const bentoItems = [
+export const bentoItems: BentoItem[] = [
   {
-    title: "AI Content Generation",
+    title: "Featured Icons",
     description: (
       <span className="text-sm">
-        Experience the power of AI in generating unique content.
+        A curated collection of high-quality icons across styles and use cases.
       </span>
     ),
     header: <SkeletonOne />,
     className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    icon: <Sparkles className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Automated Proofreading",
+    title: "Environmental Icons",
     description: (
       <span className="text-sm">
-        Let AI handle the proofreading of your documents.
+        Icons representing sustainability, nature, weather, and green tech.
       </span>
     ),
     header: <SkeletonTwo />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    icon: <Leaf className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Contextual Suggestions",
+    title: "Technology Icons",
     description: (
       <span className="text-sm">
-        Get AI-powered suggestions based on your writing context.
+        Explore a variety of tech-inspired icons from devices to cloud systems.
       </span>
     ),
     header: <SkeletonThree />,
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    icon: <Cpu className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Sentiment Analysis",
+    title: "Creative Resources",
     description: (
       <span className="text-sm">
-        Understand the sentiment of your text with AI analysis.
+        Useful free resources to enhance your project.
       </span>
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <Album className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Text Summarization",
+    title: "Assets",
     description: (
       <span className="text-sm">
-        Summarize your lengthy documents with AI technology.
+        Backgrounds, templates, and extras to complete your creative toolkit.
       </span>
     ),
     header: <SkeletonFive />,
     className: "md:col-span-1",
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+    icon: <Anvil className="h-4 w-4 text-neutral-500" />,
   },
 ];

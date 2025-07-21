@@ -15,7 +15,7 @@ import { navConfig } from "./nav.config";
 
 export function Navigation() {
   return (
-    <header className="gap-4 z-50 px-4 flex container justify-between items-center py-6">
+    <header className="gap-4 z-40 px-4 flex container justify-between items-center py-6">
       <Link href="/" className="outline-brand">
         <WordMark3 height={30} />
       </Link>
