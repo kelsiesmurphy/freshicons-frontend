@@ -1,10 +1,49 @@
 import { ReactNode } from "react";
-import SkeletonOne from "./skeletons/skeleton-one";
-import SkeletonTwo from "./skeletons/skeleton-two";
+import SkeletonIcons from "./skeletons/skeleton-icons";
+import SkeletonOther from "./skeletons/skeleton-other";
 import SkeletonThree from "./skeletons/skeleton-three";
-import SkeletonFour from "./skeletons/skeleton-four";
+import SkeletonResources from "./skeletons/skeleton-resources";
 import SkeletonFive from "./skeletons/skeleton-five";
-import { Album, Anvil, Cpu, Leaf, Sparkles } from "lucide-react";
+
+import {
+  Album,
+  Anvil,
+  Cpu,
+  Leaf,
+  Sparkles,
+  Activity,
+  Airplay,
+  Archive,
+  Aperture,
+  Atom,
+  Award,
+  Backpack,
+  BatteryFull,
+  Bell,
+  Beaker,
+  Camera,
+  Cloud,
+  Smartphone,
+  TabletSmartphone,
+  MonitorSmartphone,
+  Router,
+  Code,
+  Terminal,
+  CloudCog,
+  Server,
+  ShieldCheck,
+  MousePointerClick,
+  CircuitBoard,
+  Droplet,
+  CloudRain,
+  TreePine,
+  Sun,
+  Wind,
+  Recycle,
+  BatteryCharging,
+  Globe,
+  Flame,
+} from "lucide-react";
 
 type BentoItem = {
   title: string;
@@ -14,6 +53,24 @@ type BentoItem = {
   icon?: ReactNode;
 };
 
+const featuredIconSet = [
+  [Activity, Airplay, Archive, Aperture],
+  [Atom, Award, Backpack, BatteryFull],
+  [Bell, Beaker, Camera, Cloud],
+];
+
+const environmentalIconSet = [
+  [Leaf, Droplet, CloudRain, TreePine],
+  [Sun, Wind, Cloud, Recycle],
+  [BatteryCharging, Globe, Beaker, Flame],
+];
+
+const techIconSet = [
+  [Cpu, Smartphone, TabletSmartphone, MonitorSmartphone],
+  [Router, Code, Terminal, CloudCog],
+  [Server, ShieldCheck, MousePointerClick, CircuitBoard],
+];
+
 export const bentoItems: BentoItem[] = [
   {
     title: "Featured Icons",
@@ -22,7 +79,9 @@ export const bentoItems: BentoItem[] = [
         A curated collection of high-quality icons across styles and use cases.
       </span>
     ),
-    header: <SkeletonOne />,
+    header: (
+      <SkeletonIcons icons={featuredIconSet} iconColor="text-neutral-700" />
+    ),
     className: "md:col-span-1",
     icon: <Sparkles className="h-4 w-4 text-neutral-500" />,
   },
@@ -33,7 +92,9 @@ export const bentoItems: BentoItem[] = [
         Icons representing sustainability, nature, weather, and green tech.
       </span>
     ),
-    header: <SkeletonTwo />,
+    header: (
+      <SkeletonIcons icons={environmentalIconSet} iconColor="text-green-900" />
+    ),
     className: "md:col-span-1",
     icon: <Leaf className="h-4 w-4 text-neutral-500" />,
   },
@@ -44,7 +105,7 @@ export const bentoItems: BentoItem[] = [
         Explore a variety of tech-inspired icons from devices to cloud systems.
       </span>
     ),
-    header: <SkeletonThree />,
+    header: <SkeletonIcons icons={techIconSet} iconColor="text-blue-900" />,
     className: "md:col-span-1",
     icon: <Cpu className="h-4 w-4 text-neutral-500" />,
   },
@@ -55,7 +116,7 @@ export const bentoItems: BentoItem[] = [
         Useful free resources to enhance your project.
       </span>
     ),
-    header: <SkeletonFour />,
+    header: <SkeletonResources />,
     className: "md:col-span-2",
     icon: <Album className="h-4 w-4 text-neutral-500" />,
   },
@@ -66,7 +127,7 @@ export const bentoItems: BentoItem[] = [
         Backgrounds, templates, and extras to complete your creative toolkit.
       </span>
     ),
-    header: <SkeletonFive />,
+    header: <SkeletonOther />,
     className: "md:col-span-1",
     icon: <Anvil className="h-4 w-4 text-neutral-500" />,
   },

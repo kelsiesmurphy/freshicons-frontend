@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import React, { useEffect, useState } from "react";
 
-export default function SkeletonTwo() {
+export default function SkeletonOther() {
   const [widths, setWidths] = useState<number[]>([]);
 
   useEffect(() => {
