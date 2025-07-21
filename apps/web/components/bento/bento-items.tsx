@@ -1,9 +1,7 @@
 import { ReactNode } from "react";
 import SkeletonIcons from "./skeletons/skeleton-icons";
 import SkeletonOther from "./skeletons/skeleton-other";
-import SkeletonThree from "./skeletons/skeleton-three";
-import SkeletonResources from "./skeletons/skeleton-resources";
-import SkeletonFive from "./skeletons/skeleton-five";
+import SkeletonResources from "./skeletons/resources/skeleton-resources";
 
 import {
   Album,

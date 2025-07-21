@@ -15,70 +15,54 @@ export type NavItem = {
 
 export const navConfig: NavItem[] = [
   {
-    title: "Home",
+    title: "Icons",
+    href: "/icons",
     children: [
       {
-        title: "shadcn/ui",
-        href: "/",
-        description: "Beautifully designed components built with Tailwind CSS.",
-      },
-      {
-        title: "Introduction",
-        href: "/docs",
+        title: "Featured",
+        href: "/icons/featured",
         description:
-          "Re-usable components built using Radix UI and Tailwind CSS.",
+          "A curated collection of high-quality icons across styles and use cases.",
       },
       {
-        title: "Installation",
-        href: "/docs/installation",
-        description: "How to install dependencies and structure your app.",
+        title: "New",
+        href: "/icons/new",
+        description:
+          "The latest additions to our icon library, showcasing the newest designs and trends.",
       },
       {
-        title: "Typography",
-        href: "/docs/primitives/typography",
-        description: "Styles for headings, paragraphs, lists...etc",
+        title: "Random",
+        href: "/icons/random",
+        description: "Get a randomly selected icon from our library.",
       },
     ],
   },
   {
-    title: "Components",
+    title: "Resources",
+    href: "/resources",
     children: [
       {
-        title: "Alert Dialog",
-        href: "/docs/primitives/alert-dialog",
+        title: "SVG Pattern Maker",
+        href: "/resources/svg-pattern-maker",
         description:
-          "A modal dialog that interrupts the user with important content and expects a response.",
+          "A tool for creating unique SVG patterns for your projects.",
       },
       {
-        title: "Hover Card",
-        href: "/docs/primitives/hover-card",
+        title: "CSS Gradient Maker",
+        href: "/resources/css-gradient-maker",
         description:
-          "For sighted users to preview content available behind a link.",
+          "A tool for creating beautiful CSS gradients for your projects.",
+      },
+      {
+        title: "Blob Shape Maker",
+        href: "/resources/blob-shape-maker",
+        description:
+          "A tool for creating unique blob shapes for your projects.",
       },
     ],
   },
   {
-    title: "Docs",
-    href: "/docs",
-  },
-  {
-    title: "With Icon",
-    children: [
-      {
-        title: "Backlog",
-        href: "#",
-        icon: CircleHelpIcon,
-      },
-      {
-        title: "To Do",
-        href: "#",
-        icon: CircleIcon,
-      },
-      {
-        title: "Done",
-        href: "#",
-        icon: CircleCheckIcon,
-      },
-    ],
+    title: "Other Assets",
+    href: "/assets",
   },
 ];

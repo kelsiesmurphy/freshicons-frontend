@@ -65,8 +65,9 @@ export function Newsletter() {
           Want to stay notified?
         </h2>
         <p className="text-muted-foreground sm:text-lg md:text-xl transition-all">
-          Be the first to know about the latest releases and updates as they become
-          available, as well as any other information we need to share with you.
+          Be the first to know about the latest releases and updates as they
+          become available, as well as any other information we need to share
+          with you.
         </p>
       </div>
       <Form {...form}>
@@ -97,7 +98,7 @@ export function Newsletter() {
               </FormItem>
             )}
           />
-          <Button type="submit" className="w-full md:w-fit">
+          <Button variant="wordmark" type="submit" className="w-full md:w-fit">
             Subscribe
           </Button>
         </form>

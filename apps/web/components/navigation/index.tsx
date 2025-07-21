@@ -1,5 +1,4 @@
-import Link from "next/link";
-import WordMark3 from "@workspace/ui/components/branding/wordmark3";
+import WordMark2 from "@workspace/ui/components/branding/wordmark2";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,12 +11,14 @@ import {
 
 import { NavigationItem } from "./navigation-item";
 import { navConfig } from "./nav.config";
+import { Button } from "@workspace/ui/components/button";
+import Link from "next/link";
 
 export function Navigation() {
   return (
     <header className="gap-4 z-40 px-4 flex container justify-between items-center py-6">
       <Link href="/" className="outline-brand">
-        <WordMark3 height={30} />
+        <WordMark2 height={30} />
       </Link>
 
       <nav className="hidden md:flex gap-2">
@@ -27,7 +28,14 @@ export function Navigation() {
               <NavigationMenuItem key={item.title}>
                 {item.children ? (
                   <>
-                    <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>
+                      <Link
+                        href={item.href ?? "#"}
+                        className="flex items-center justify-between w-full"
+                      >
+                        {item.title}
+                      </Link>
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="grid gap-2 p-2 w-[300px] md:w-[400px]">
                         {item.children.map((child) => (
@@ -57,6 +65,9 @@ export function Navigation() {
             ))}
           </NavigationMenuList>
         </NavigationMenu>
+        <Button variant="wordmark">
+          <Link href="/sign-in">Sign in</Link>
+        </Button>
       </nav>
     </header>
   );

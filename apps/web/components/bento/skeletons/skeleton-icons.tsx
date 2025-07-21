@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "motion/react";
+import { useRef, useEffect, useState } from "react";
+import { motion, useInView } from "motion/react";
 import { LucideIcon } from "lucide-react";
 
 type SkeletonIconsProps = {
@@ -12,10 +13,26 @@ export default function SkeletonIcons({
   icons,
   iconColor,
 }: SkeletonIconsProps) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.3 }); // Triggers when 30% of the element is in view
+  const [hoverState, setHoverState] = useState<"initial" | "hover">("initial");
+
+  useEffect(() => {
+    if (isInView) {
+      setHoverState("hover");
+      const timeout = setTimeout(() => {
+        setHoverState("initial"); // Revert after animation
+      }, 1200); // Adjust duration as needed
+      return () => clearTimeout(timeout);
+    }
+  }, [isInView]);
+
   return (
     <motion.div
+      ref={ref}
       initial="initial"
-      whileHover="hover"
+      animate={hoverState}
+      whileHover="hover" // Still supports desktop hover
       className="flex flex-col justify-between p-4 gap-4 h-full w-full"
     >
       {icons.map((Row, rowIndex) => (

@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import React from "react";
 
-export default function SkeletonThree() {
+export default function SkeletonGradient() {
   const variants = {
     initial: {
       backgroundPosition: "0 50%",
