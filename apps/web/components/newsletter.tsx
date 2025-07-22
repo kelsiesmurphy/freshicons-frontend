@@ -52,9 +52,12 @@ export function Newsletter() {
       toast("Subscribed!", {
         description: "You've been added to our list.",
       });
-    } catch (error: any) {
+    } catch (error) {
       toast("Error", {
-        description: error.message,
+        description:
+          error instanceof Error
+            ? error.message
+            : "An unexpected error occurred",
       });
     }
   }
