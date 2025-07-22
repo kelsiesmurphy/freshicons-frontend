@@ -18,7 +18,7 @@ export default function RootLayout({
     <ClerkProvider
       appearance={{
         variables: {
-          colorShimmer: "black",
+          colorShimmer: "#2a322b",
         },
       }}
     >
