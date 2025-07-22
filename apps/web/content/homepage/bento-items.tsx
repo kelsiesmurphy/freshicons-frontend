@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
-import SkeletonIcons from "./skeletons/skeleton-icons";
-import SkeletonOther from "./skeletons/skeleton-other";
-import SkeletonResources from "./skeletons/resources/skeleton-resources";
+import SkeletonIcons from "../../components/bento/skeletons/skeleton-icons";
+import SkeletonOther from "../../components/bento/skeletons/skeleton-other";
+import SkeletonResources from "../../components/bento/skeletons/resources/skeleton-resources";
 
 import {
   Album,

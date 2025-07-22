@@ -16,6 +16,7 @@ import {
 import { Input } from "@workspace/ui/components/input";
 import Link from "next/link";
 import { toast } from "sonner";
+import { homepage } from "@/content/homepage";
 
 const FormSchema = z.object({
   email: z
@@ -62,12 +63,10 @@ export function Newsletter() {
     <section className="flex bg-secondary/40 flex-col items-center py-16 md:py-24 px-4 gap-6">
       <div className="flex container flex-col items-center text-center gap-5 max-w-3xl">
         <h2 className="font-nord text-2xl md:text-4xl font-medium transition-all">
-          Want to stay notified?
+          {homepage.content.newsletter.title}
         </h2>
         <p className="text-muted-foreground sm:text-lg md:text-xl transition-all">
-          Be the first to know about the latest releases and updates as they
-          become available, as well as any other information we need to share
-          with you.
+          {homepage.content.newsletter.description}
         </p>
       </div>
       <Form {...form}>

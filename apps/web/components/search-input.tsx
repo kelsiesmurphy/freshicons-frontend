@@ -3,17 +3,12 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { cn } from "@workspace/ui/lib/utils";
+import { homepage } from "@/content/homepage";
 
 export function SearchInput() {
   const [currentPlaceholder, setCurrentPlaceholder] = useState(0);
 
-  const placeholders = [
-    "Start with a spark...",
-    "Design what you want to see in the world",
-    "The right asset makes the idea click",
-    "Inspiration, but make it downloadable",
-    "Craft your build, piece by piece",
-  ];
+  const placeholders = homepage.content.hero.searchPlaceholders;
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(e.target.value);

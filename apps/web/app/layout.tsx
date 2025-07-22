@@ -1,6 +1,7 @@
 import "@workspace/ui/globals.css";
 import "@/styles/fonts.css";
 import { Providers } from "@/components/utility/providers";
+import { ClerkProvider } from "@clerk/nextjs";
 
 import { Toaster } from "@workspace/ui/components/sonner";
 import Plausible from "@workspace/ui/lib/plausible";
@@ -14,20 +15,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <Plausible />
-      </head>
-      <body className="font-publica antialiased selection:bg-primary selection:text-white min-h-screen bg-[url('/background-grid.svg')] bg-top bg-no-repeat bg-fixed">
-        <SkipToContent />
-        <LenisWrapper>
-          <Providers>
-            {children}
-          </Providers>
-          <Toaster />
-        </LenisWrapper>
-        {process.env.NODE_ENV === "development" && <DevTools />}
-      </body>
-    </html>
+    <ClerkProvider
+      appearance={{
+        variables: {
+          colorShimmer: "black",
+        },
+      }}
+    >
+      <html lang="en" suppressHydrationWarning>
+        <head>
+          <Plausible />
+        </head>
+        <body className="font-publica antialiased selection:bg-primary selection:text-white min-h-screen bg-[url('/background-grid.svg')] bg-top bg-no-repeat bg-fixed">
+          <SkipToContent />
+          <LenisWrapper>
+            <Providers>{children}</Providers>
+            <Toaster />
+          </LenisWrapper>
+          {process.env.NODE_ENV === "development" && <DevTools />}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

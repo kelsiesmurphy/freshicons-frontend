@@ -5,7 +5,7 @@ import {
   BentoGridItem,
 } from "@workspace/ui/components/aceternity-ui/bento-grid";
 import { cn } from "@workspace/ui/lib/utils";
-import { bentoItems } from "./bento-items";
+import { bentoItems } from "@/content/homepage/bento-items";
 import React from "react";
 
 export function Bento() {
