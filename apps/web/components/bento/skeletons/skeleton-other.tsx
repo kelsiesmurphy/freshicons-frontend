@@ -28,7 +28,7 @@ export default function SkeletonOther() {
           return () => clearTimeout(timeout);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     const el = ref.current;

@@ -54,9 +54,7 @@ export const SkeletonResourcesMobile = ({
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
             }}
           >
-            <div className="min-h-[6rem] h-full">
-              {card.content}
-            </div>
+            <div className="min-h-[6rem] h-full">{card.content}</div>
             <div>
               <p className="sm:text-sm mt-4 text-xs text-center font-semibold text-neutral-500">
                 {card.name}

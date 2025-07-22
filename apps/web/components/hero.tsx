@@ -11,7 +11,7 @@ export default function Hero() {
           <div className="space-y-12">
             <div className="space-y-6">
               <p className="font-bold whitespace-pre-line text-[42px] md:text-6xl lg:text-7xl text-background">
-                Icons and Design Assets, 
+                Icons and Design Assets,
                 <br />
                 Freshly picked
               </p>

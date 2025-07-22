@@ -9,7 +9,7 @@ const COLUMNS = 10;
 export default function SkeletonGrid() {
   const ref = useRef<HTMLDivElement>(null);
   const [animationState, setAnimationState] = useState<"initial" | "hover">(
-    "initial"
+    "initial",
   );
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function SkeletonGrid() {
           return () => clearTimeout(timeout);
         }
       },
-      { threshold: 0.3 } // Trigger when 30% is in view
+      { threshold: 0.3 }, // Trigger when 30% is in view
     );
 
     const el = ref.current;
