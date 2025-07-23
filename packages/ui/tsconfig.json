@@ -3,7 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@workspace/ui/*": ["./src/*"]
+      "@workspace/ui/*": ["./src/*"],
+      "@workspace/shared/*": ["../shared/src/*"]
     }
   },
   "include": [".", "../../apps/web/components/lenis-wrapper.tsx"],

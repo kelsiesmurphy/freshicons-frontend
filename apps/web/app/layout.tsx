@@ -8,6 +8,8 @@ import Plausible from "@workspace/ui/lib/plausible";
 import LenisWrapper from "@/components/utility/lenis-wrapper";
 import SkipToContent from "@workspace/ui/components/utility/skip-to-content";
 import DevTools from "@workspace/ui/components/utility/dev-tools";
+import { Navigation } from "@/components/navigation";
+import Footer from "@/components/footer";
 
 export default function RootLayout({
   children,
@@ -29,7 +31,15 @@ export default function RootLayout({
         <body className="font-publica antialiased selection:bg-primary selection:text-white min-h-screen bg-[url('/background-grid.svg')] bg-top bg-no-repeat bg-fixed">
           <SkipToContent />
           <LenisWrapper>
-            <Providers>{children}</Providers>
+            <Providers>
+              <main className="flex flex-col min-h-svh">
+                <Navigation />
+                <div className="flex-1" id="main-content">
+                  {children}
+                </div>
+                <Footer />
+              </main>
+            </Providers>
             <Toaster />
           </LenisWrapper>
           {process.env.NODE_ENV === "development" && <DevTools />}

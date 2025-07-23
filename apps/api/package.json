@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "tsup src/index.ts --watch --onSuccess 'node dist/index.js'",
+    "build": "tsup src/index.ts --format esm --dts",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@clerk/backend": "^2.5.1",
+    "@hono/node-server": "^1.17.1",
+    "@supabase/supabase-js": "^2.52.1",
+    "hono": "^4.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/supertest": "^6.0.3",
+    "dotenv": "^17.2.0",
+    "supertest": "^7.1.4",
+    "tsup": "^8.5.0",
+    "vitest": "^3.2.4"
+  }
+}
