@@ -1,9 +1,3 @@
 [build]
   base = "apps/api"
-  functions = "netlify/functions"
-  command = "npm run build"  # or your build command inside apps/api
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api/:splat"
-  status = 200
+  command = "npm run build"
