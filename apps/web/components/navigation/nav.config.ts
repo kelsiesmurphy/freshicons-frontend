@@ -10,25 +10,22 @@ export type NavItem = {
 
 export const navConfig: NavItem[] = [
   {
+    title: "All",
+    href: "/search",
+  },
+  {
     title: "Icons",
-    href: "/icons",
+    href: "/search?type=icon",
     children: [
       {
         title: "Featured",
-        href: "/icons/featured",
-        description:
-          "A curated collection of high-quality icons across styles and use cases.",
+        href: "/search?type=icon&featured=true",
+        description: "A curated collection of high-quality icons.",
       },
       {
         title: "New",
-        href: "/icons/new",
-        description:
-          "The latest additions to our icon library, showcasing the newest designs and trends.",
-      },
-      {
-        title: "Random",
-        href: "/icons/random",
-        description: "Get a randomly selected icon from our library.",
+        href: "/search?type=icon&sort=new",
+        description: "The latest additions to our icon library.",
       },
     ],
   },
@@ -55,9 +52,5 @@ export const navConfig: NavItem[] = [
           "A tool for creating unique blob shapes for your projects.",
       },
     ],
-  },
-  {
-    title: "Other Assets",
-    href: "/assets",
   },
 ];
