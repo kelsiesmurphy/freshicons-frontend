@@ -1,6 +1,6 @@
 "use client";
 
-import WordMark2 from "@workspace/ui/components/branding/wordmark2";
+import WordMark from "@workspace/ui/components/branding/wordmark";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -33,7 +33,7 @@ export function Navigation() {
   return (
     <header className="gap-4 z-40 px-4 flex container justify-between items-center py-6">
       <Link href="/" className="outline-brand">
-        <WordMark2 height={30} />
+        <WordMark height={30} />
       </Link>
 
       <nav className="hidden md:flex items-center gap-2">
