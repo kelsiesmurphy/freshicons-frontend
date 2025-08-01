@@ -35,7 +35,7 @@ export function Newsletter() {
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     try {
-      const response = await fetch("/api/newsletter", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/newsletter`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
