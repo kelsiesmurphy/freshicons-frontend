@@ -17,8 +17,7 @@ export default async function SearchPage({
   const featured = params.featured?.toString() || "";
   const sort = params.sort?.toString() || "";
 
-  const baseUrl =
-    process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
+  const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
   const url = new URL(`${baseUrl}/api/assets/search`);
   if (q) url.searchParams.set("q", q);
