@@ -78,7 +78,7 @@ export const bentoItems: BentoItem[] = [
       </span>
     ),
     header: (
-      <SkeletonIcons icons={featuredIconSet} iconColor="text-neutral-700" />
+      <SkeletonIcons icons={featuredIconSet} iconColor="text-neutral-700 dark:text-white" />
     ),
     className: "md:col-span-1",
     icon: <Sparkles className="h-4 w-4 text-neutral-500" />,
@@ -91,7 +91,7 @@ export const bentoItems: BentoItem[] = [
       </span>
     ),
     header: (
-      <SkeletonIcons icons={environmentalIconSet} iconColor="text-green-900" />
+      <SkeletonIcons icons={environmentalIconSet} iconColor="text-green-900 dark:text-green-400" />
     ),
     className: "md:col-span-1",
     icon: <Leaf className="h-4 w-4 text-neutral-500" />,
@@ -103,7 +103,7 @@ export const bentoItems: BentoItem[] = [
         Explore a variety of tech-inspired icons from devices to cloud systems.
       </span>
     ),
-    header: <SkeletonIcons icons={techIconSet} iconColor="text-blue-900" />,
+    header: <SkeletonIcons icons={techIconSet} iconColor="text-blue-900 dark:text-blue-400" />,
     className: "md:col-span-1",
     icon: <Cpu className="h-4 w-4 text-neutral-500" />,
   },

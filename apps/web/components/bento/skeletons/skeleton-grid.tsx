@@ -48,7 +48,7 @@ export default function SkeletonGrid() {
         return (
           <motion.div
             key={i}
-            className="h-2 w-2 rounded-full bg-neutral-300 dark:bg-neutral-700"
+            className="h-2 w-2 rounded-full bg-neutral-300 dark:bg-neutral-500"
             variants={{
               initial: { scale: 0.5, opacity: 0.7 },
               hover: {

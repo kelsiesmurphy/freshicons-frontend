@@ -63,7 +63,7 @@ export function Newsletter() {
   }
 
   return (
-    <section className="flex bg-secondary/40 flex-col items-center py-16 md:py-24 px-4 gap-6">
+    <section className="flex bg-secondary/40 dark:bg-secondary/80 flex-col items-center py-16 md:py-24 px-4 gap-6">
       <div className="flex container flex-col items-center text-center gap-5 max-w-3xl">
         <h2 className="font-nord text-2xl md:text-4xl font-medium transition-all">
           {homepage.content.newsletter.title}

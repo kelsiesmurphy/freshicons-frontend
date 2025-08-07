@@ -9,7 +9,7 @@ export default function SkeletonBlob() {
       {/* Purple Blob */}
       <svg
         viewBox="0 0 206 142"
-        className="absolute w-full h-full opacity-50 mix-blend-multiply"
+        className="absolute w-full h-full opacity-50 mix-blend-multiply dark:mix-blend-screen"
         preserveAspectRatio="xMidYMid slice"
         aria-hidden="true"
       >
@@ -37,7 +37,7 @@ export default function SkeletonBlob() {
       {/* Green Blob */}
       <svg
         viewBox="0 0 206 142"
-        className="absolute w-full h-full opacity-40 mix-blend-multiply"
+        className="absolute w-full h-full opacity-40 mix-blend-multiply dark:mix-blend-screen"
         preserveAspectRatio="xMidYMid slice"
         aria-hidden="true"
       >

@@ -24,7 +24,7 @@ export const CardGalleryHoverEffect = ({
     >
       {items.map((item, idx) => (
         <a
-          href={`/icons/${item?.slug}`}
+          href={`/assets/${item?.slug}`}
           key={item?.slug}
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}

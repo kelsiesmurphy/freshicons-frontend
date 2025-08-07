@@ -28,7 +28,7 @@ export default function RootLayout({
         <head>
           <Plausible />
         </head>
-        <body className="font-publica antialiased selection:bg-primary selection:text-white min-h-screen bg-[url('/background-grid.svg')] bg-top bg-no-repeat bg-fixed">
+        <body className="font-publica antialiased selection:bg-primary selection:text-white min-h-screen bg-[url('/background-grid.svg')] dark:bg-[url('/background-grid-dark.svg')] bg-top bg-no-repeat bg-fixed">
           <SkipToContent />
           <LenisWrapper>
             <Providers>

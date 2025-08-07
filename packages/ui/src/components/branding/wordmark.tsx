@@ -20,7 +20,7 @@ const WordMark = ({ height }: { height?: number }) => (
         y2={44}
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#1A1419" />
+        <stop stopColor="var(--foreground)" />
         <stop offset={1} stopColor="#45705D" />
       </linearGradient>
       <clipPath id="a">

@@ -30,27 +30,27 @@ export default function SkeletonResources() {
       >
         <motion.div
           variants={first}
-          className="h-full w-1/3 flex rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex-col items-center justify-center"
+          className="h-full w-1/3 flex rounded-2xl bg-white p-4 dark:bg-black dark:border-muted border border-neutral-200 flex-col items-center justify-center"
         >
           {skeletonCards[0]?.content}
-          <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+          <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 dark:text-white mt-4">
             {skeletonCards[0]?.name}
           </p>
         </motion.div>
 
-        <motion.div className="flex h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex-col items-center justify-center">
+        <motion.div className="flex h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-muted border border-neutral-200 flex-col items-center justify-center">
           {skeletonCards[1]?.content}
-          <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+          <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 dark:text-white mt-4">
             {skeletonCards[1]?.name}
           </p>
         </motion.div>
 
         <motion.div
           variants={second}
-          className="h-full w-1/3 flex rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex-col items-center justify-center"
+          className="h-full w-1/3 flex rounded-2xl bg-white p-4 dark:bg-black dark:border-muted border border-neutral-200 flex-col items-center justify-center"
         >
           {skeletonCards[2]?.content}
-          <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+          <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 dark:text-white mt-4">
             {skeletonCards[2]?.name}
           </p>
         </motion.div>

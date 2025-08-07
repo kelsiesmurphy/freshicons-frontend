@@ -63,7 +63,7 @@ export default function SkeletonOther() {
           key={`skeleton-two-${i}`}
           variants={variants}
           style={{ maxWidth: `${width}%` }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
+          className="flex flex-row rounded-full border border-neutral-100 dark:border-muted p-2 items-center space-x-2 bg-neutral-100 dark:bg-muted w-full h-4"
         />
       ))}
     </motion.div>
